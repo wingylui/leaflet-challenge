@@ -1,4 +1,4 @@
-# Module 15 Challenge: Interactive Map visualisation using Javascript
+## Module 15 Challenge: Interactive Map visualisation using Javascript
 
 #### Please visualise the data in this [website](https://wingylui.github.io/leaflet-challenge/).
 ---
