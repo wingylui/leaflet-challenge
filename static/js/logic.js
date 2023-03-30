@@ -49,7 +49,9 @@ d3.json(USGSurl).then(function(data) {
             //  Popup msg (includes time and location occurred)
             // new Date(timestamp) -> change timestamp to date; can also use getDate(dateFormat) and getHour() , getMinutes(), toDateString() 
             layer.bindPopup("<b>Date occurred:</b> " + new Date(feature.properties.time).toDateString() + 
-                            "</br><b>Location occurred:</b> " + feature.properties.place);
+                            "</br><b>Location occurred:</b> " + feature.properties.place +
+                            "</br><b>Magnitude:</b> " + feature.properties.mag +
+                            "</br><b>Depth of earthquakes:</b> " + feature.geometry.coordinates[2]);
         }
     }).addTo(finalMap);
     // add circlePointLayer into control layer
